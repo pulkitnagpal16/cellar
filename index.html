@@ -71,14 +71,19 @@
         }
 
         .privacy{
-            display: flex;
-            justify-content: space-evenly; 
-            align-items: center;
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+
+        .box1,.box2{
+            text-align: center;
+            font-weight: bold;
         }
 
         .privatetext{
             text-align: center;
         }
+
     </style>
     <title>Password Vault</title>
 </head>
@@ -97,8 +102,14 @@
         <h2>The Password Manager that puts PRIVACY first.</h2>
     </div>
     <div class="privacy">
-        <img id="privateimg" src="https://img.icons8.com/pastel-glyph/115/000000/private-lock.png"/>
-        <img id="secureimg" src="https://img.icons8.com/ios-filled/115/000000/private-cloud-storage.png"/>
+        <div class="box1"> 
+            <img id="privateimg" src="https://img.icons8.com/pastel-glyph/115/000000/private-lock.png"/>
+            <p>There are no third-party trackers in our apps.</p>
+        </div>
+        <div class="box2">
+            <img id="secureimg" src="https://img.icons8.com/ios-filled/115/000000/private-cloud-storage.png"/>
+            <p>A Master Password, means your data is extra-safe.</p>
+        </div>
     </div>
     <br><br><br>
     <div class="multiplatform">
