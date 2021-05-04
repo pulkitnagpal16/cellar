@@ -17,6 +17,7 @@
             position:fixed;
             top: 0;
             left: 0;
+            right: 0;
             width: 100vw;
             background-color: black;
             display: flex;
@@ -71,8 +72,12 @@
 
         .privacy{
             display: flex;
-            justify-content: center; 
-            text-align:center;
+            justify-content: space-evenly; 
+            align-items: center;
+        }
+
+        .privatetext{
+            text-align: center;
         }
     </style>
     <title>Password Vault</title>
@@ -82,15 +87,16 @@
         <h2>CELLAR</h2>
         <button onclick="location.href='login.html'" class="startup">GET STARTED</button>
     </header>
-    <br><br><br>
+    <br><br><br><br>
     <div class="introtext">
         <h2>PROTECT YOUR PASSWORDS</h2>
         <h3>You’ll never need to remember or type your passwords again.</h3>
     </div>
     <br><br>
-    <h2>The Password Manager that puts PRIVACY first.</h2>
+    <div class="privatetext">
+        <h2>The Password Manager that puts PRIVACY first.</h2>
+    </div>
     <div class="privacy">
-        
         <img id="privateimg" src="https://img.icons8.com/pastel-glyph/115/000000/private-lock.png"/>
         <img id="secureimg" src="https://img.icons8.com/ios-filled/115/000000/private-cloud-storage.png"/>
     </div>
