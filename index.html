@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        body{
+            background-color: whitesmoke;
+        }
+
+        .topbar{
+            position:fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .topbar h2{
+            color: white;
+            padding-left: 1em;
+        }
+
+        .startup{
+            color: white;
+            background-color: black;
+            border: white solid 2px;
+            border-radius: 0.3em;
+            width: 10em;
+            height: 3em;
+            margin-top: 1em;
+            margin-right: 1.2em;
+        }
+
+        .startup:hover{
+            cursor: pointer;
+            border: white solid 2px;
+            transform: scale(1.1)
+        }
+
+        .introtext{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 90vw;
+            text-align: center;
+        }
+
+        .multiplatform{
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            width: 90%;
+            text-align: center;
+        }
+
+        .multiplatform img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 55vw;
+            height: vh;
+        }
+
+        .privacy{
+            display: flex;
+            justify-content: center; 
+        }
+
+        .privacy img{
+            padding-right:3em;
+            padding-left: 3em;
+        }
+    </style>
+    <title>Password Vault</title>
+</head>
+<body>
+    <header class="topbar">
+        <h2>CELLAR</h2>
+        <button onclick="location.href='login.html'" class="startup">GET STARTED</button>
+    </header>
+    <br><br><br>
+    <div class="introtext">
+        <h2>PROTECT YOUR PASSWORDS</h2>
+        <h3>You’ll never need to remember or type your passwords again.</h3>
+    </div>
+    <br><br>
+    <h2>The Password Manager that puts PRIVACY first.</h2>
+    <div class="privacy">
+        
+        <img id="privateimg" src="https://img.icons8.com/pastel-glyph/115/000000/private-lock.png"/>
+        <img id="secureimg" src="https://img.icons8.com/ios-filled/115/000000/private-cloud-storage.png"/>
+    </div>
+    <br><br><br>
+    <div class="multiplatform">
+        <h2>MULTI PLATFORM SUPPORT</h2>
+        <h3>CELLAR is available for Windows, Mac, iOS, and Android with support for all their respective major browsers.</h3>
+        <img src="cross-platform-icon.jpg" alt="">
+    </div>
+</body>
+</html>
